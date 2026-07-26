@@ -1,0 +1,5 @@
+# [Encapsulation in Java](https://www.geeksforgeeks.org/problems/encapsulation-in-java/1?page=1&category=Java&status=unsolved&sortBy=submissions)
+## Easy
+Your task is to create a&nbsp;Person&nbsp;class in Java that demonstrates encapsulation.This class should have two private&nbsp;attributes:&nbsp;name( String ) and age( int ) whose default values should be name as "Geeks" and age as 10.The class should provide public getter and setter methods to access and modify these private attributes.Note: In custom test cases Person() should be written first and in setName('name') function write the name is single quotes.
+Example:
+Input: Funtion calls: [Person(), getName(), setName("John"), setAge(21), getName(), getAge()] Output: Geeks John 21Explanation: Person person = new Person() // Person Object Createdperson.getName() // Default value "Geeks" returnedperson.setName("John") // name value set to "John"person.setAge(21) // age value set to 21person.getName() // "John" returnedperson.getAge() // 21 returned
