@@ -1,0 +1,42 @@
+class Solution {
+    int transform(String s1, String s2) {
+        if (s1.length() != s2.length()) {
+            return -1;
+        }
+
+        int[] freq = new int[256];
+
+        for (char c : s1.toCharArray()) {
+            freq[c]++;
+        }
+
+        for (char c : s2.toCharArray()) {
+            freq[c]--;
+        }
+
+        for (int count : freq) {
+            if (count != 0) {
+                return -1;
+            }
+        }
+
+        int i = s1.length() - 1;
+        int j = s2.length() - 1;
+        int operations = 0;
+
+        while (i >= 0) {
+            if (s1.charAt(i) == s2.charAt(j)) {
+                j--;
+            } else {
+                operations++;
+            }
+            i--;
+        }
+
+        return operations;
+    }
+}
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
