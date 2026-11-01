@@ -1,0 +1,3 @@
+# [Maximum Subarray Sum with One Square Allowed](https://www.geeksforgeeks.org/problems/maximum-sum-subarray--143510/1)
+## Medium
+Given an integer array arr[], find the maximum&nbsp;subarray&nbsp;sum by squaring at most one element.Examples:Input:&nbsp;arr[] =&nbsp; [-1, -2, 3, -2, 3]Output: 10Explanation: The subarray {3, -2, 3} with squaring -2 will give the maximum sum as 3 + 4 + 3 = 10.Input:&nbsp;arr[] =&nbsp; [-4, -4, -2, 5, 2, -1]Output: 27Explanation: The subarray {5, 2} with squaring 5 will give a maximum sum of 25 + 2 = 27.
